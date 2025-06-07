@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Kite</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      html {
+        font: sans-serif;
+      }
+      body {
+        background-color: #f8f8f8;
+        font-family: Open Sans, sans-serif;
+      }
+      .container {
+        background-color: #fff;
+        box-shadow: 1px 1px 4px #eee;
+        border-radius: 5px;
+        border: 2px solid #eee;
+        margin: 60px auto 40px;
+        padding: 40px;
+        height: 442px;
+        
+        width: 360px;
+      }
+      .logo
+        {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+      #k {
+        width: 60px;
+        height: 40px;
+      }
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #email,
+        #password {
+            
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+  
+}
+  input[type="email"],[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 15px;
+        color: #f9f9f9;
+        opacity: 0.8;
+    }
+
+
+
+
+
+
+
+
+
+.login{
+    width: 100%;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: .925rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+    /* display: inline-block; */
+}
+    .login:hover {
+        background-color: #e64a19;
+        cursor: pointer;
+    }
+    .remember {
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        opacity: 0.8;
+        /* margin-top: 10px; */
+    }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          id="k"
+          src="https://kite.zerodha.com/static/images/kite-logo.svg"
+          class="hi"
+          alt="kite"
+        />
+      </div>
+      <div class="heading">Login to Kite</div>
+      <form >
+        <div class="email">
+          <!-- <label for="email">Email</label> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Phone or User ID"
+            required
+          />
+        </div>
+        <div class="password">
+          <!-- <label for="password">Password</label> -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div >
+        <div >
+            <button class="login" type="submit">Login</button>
+        </div>
+        
+        <div class="remember">
+           Forgot user ID or password?
+        </div>
+      </form>
+
+
+    </div>
+  </body>
+</html>

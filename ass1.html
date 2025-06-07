@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color:seagreen;
+            background : url('img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            background: transparent;
+        }
+        form {
+            width: 500px;
+            margin: 20px auto;
+            
+            padding:30px 50px 60px 50px;
+
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* background-color: white; */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .adobe {
+             display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            gap: 20px;
+        }
+       .subtext {
+           display: flex;
+           gap: 5px;
+           margin-bottom:20px ;
+        }
+        .subtext h4 {
+            font-size: 14px;
+            color: #080707;
+        }
+        #link1 {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .email {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .email label {
+            margin-bottom: 9px;
+            font-size: 11px;
+            color: #333;
+        }
+        .email input {
+            padding: 6px;
+            border: 1px solid #8a8989;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .continue {
+            display: flex;
+            justify-content: right;
+
+        }
+        .continue button {
+            margin-bottom: 0px;
+            padding: 10px 20px;
+            background-color: #0864c6fc;
+            color: white;
+            border: none;
+            border-radius: 44px;
+            cursor: pointer;
+            font-size: 12.5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-emphasis: bold;
+        }
+        .separator-container {
+  display: flex;
+  align-items: center; /* Vertically aligns the items in the center */
+  margin: 2px 0 29px 0; /* Adds some space above and below the separator */
+}
+
+.line {
+  flex-grow: 1; /* Makes the line take up available space */
+  height: 1px; /* Thickness of the line */
+  background-color: #ccc; /* Color of the line */
+}
+
+.text {
+  padding: 0 15px; /* Adds space around the "Or" text */
+  font-family: Arial, sans-serif; /* Or your preferred font */
+  font-size: 14px; /* Adjust font size as needed */
+  color: #3a3737; /* Color of the text */
+  /* white-space: nowrap; Prevents the text from wrapping */
+}
+        .continue_with {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: -20px;
+        }
+        .fa-google {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .btext1 {
+            max-width: max-content;
+
+            font-size: 12.5px;
+            font-weight: bold;
+            color: black;
+            padding: 0 10px;
+            margin: 0 0 0 5px;
+            align-self: center;
+        }
+        .google {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            height: 70px;
+        }
+        #google_button {
+             width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 140px;
+            background-color: transparent;
+            color: rgb(11, 5, 5);
+            border: solid 1px #8a8989;
+            border-radius: 44px;
+            cursor: pointer;
+            font-size: 12.5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #google_button:hover {
+            background-color: #c1351d; /* Darker shade on hover */
+        }
+        .Facebook {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        #Facebook_button {
+             width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 140px;
+            background-color: white;
+            color: rgb(11, 5, 5);
+            border: solid 1px #8a8989;
+            border-radius: 44px;
+            cursor: pointer;
+            font-size: 12.5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+       #facebook_button:hover {
+            background-color: #3b5998; /* Darker shade on hover */
+        }
+
+      .log        
+      
+
+        
+        .social {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+            padding: auto;
+        }
+        .view {
+            text-align: center;
+            margin-top: -15px;
+            font-size: small;
+            text-decoration: none;
+            margin-bottom: 20px;
+
+        }
+        .view a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 90%;
+
+        }
+        .help {
+            /* text-align: center; */
+            font-size: small;
+font-weight: 500;
+            color: #555;
+        }
+        .help a {
+            text-decoration: none;
+font-weight: 540;
+            color: #007bff;
+        }
+        #email{
+            background-color: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+         <form class="adobe" >
+        <div class="main">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/adobe-logo.png" alt="adobe-logo"/>
+            <span> <b>Adobe</b></span>
+        </div>
+               <div class="heading">
+            <h2>Sign in</h2>
+        </div> 
+        <div class="subtext">
+            <h4>New user?</h2>
+                <a href="#" id="link1">Create an account</a>
+        </div> 
+        <div class="email">
+            <label for="email" id="mail_text">Email address</label>
+            <input type="email" id="email" name="email"  required>
+        </div>
+        <div class="continue">
+            <button type="submit" id="continue_button" >Continue</button>
+        </div>
+     <div class="separator-container">
+  <div class="line"></div>
+  <span class="text">Or</span>
+  <div class="line"></div>
+</div>
+<div class="continue_with">
+    <div class="google">
+        
+        <button type="button" id="google_button">
+           
+           
+           <div><a href="https://www.google.com">
+           <img class="social"width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+           </a></div> 
+            <div class="btext1">Continue with Google</div>
+        </button>
+        
+    </div>
+      <div class="google">
+        
+        <button type="button" id="google_button">
+           
+           
+           <div class="logo"><a href="https://www.facebook.com">
+           <img class="social"width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>
+           </a></div> 
+            <div class="btext1">Continue with   Facebook</div>
+        </button>
+        
+    </div>
+        
+    <div class="google">
+        
+        <button type="button" id="google_button">
+           
+           
+           <div><a href="https://www.apple.com">
+           <img class="social"width="48" height="48" src="https://img.icons8.com/ios-glyphs/100/mac-os.png" alt="google-logo"/>
+           </a></div> 
+            <div class="btext1">Continue with Apple</div>
+        </button>
+        
+    </div>
+
+</div>
+<div class="view">
+    <a href="#">View more</a>
+</div>
+        <div class="help">
+            <a href="#"><p>Get help signing in</p></a>
+        </div>
+
+    </form>
+    </div>
+   
+</body>
+</html>
