@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Kite</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      html {
+        font: sans-serif;
+      }
+      body {
+        background-color: #f8f8f8;
+        font-family: Open Sans, sans-serif;
+      }
+      .container {
+        background-color: #fff;
+        box-shadow: 1px 1px 4px #eee;
+        border-radius: 5px;
+        border: 2px solid #eee;
+        margin: 60px auto 40px;
+        padding: 40px;
+        height: 442px;
+        
+        width: 360px;
+      }
+      .logo
+        {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+      #k {
+        width: 60px;
+        height: 40px;
+      }
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #email,
+        #password {
+            
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+  
+}
+  input[type="email"],[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 15px;
+        color: #f9f9f9;
+        opacity: 0.8;
+    }
+
+
+
+
+
+
+
+
+
+.login{
+    width: 100%;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: .925rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+    /* display: inline-block; */
+}
+    .login:hover {
+        background-color: #e64a19;
+        cursor: pointer;
+    }
+    .remember {
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        opacity: 0.8;
+        /* margin-top: 10px; */
+    }
+     
+    .navbar {
+/* YOUR TASK: Make this a flex container */
+display: none;
+/* YOUR TASK: Align items vertically in center */
+align-items: center;
+/* YOUR TASK: Spread logo, links, and button apart */
+justify-content: center
+
+
+}
+@media screen and (min-width: 1268px) {
+    .navbar {
+        display: flex;
+    }
+    
+}
+.nav-links {
+/* YOUR TASK: Make this a flex container */
+display: flex;
+/* YOUR TASK: Remove default list styling */
+list-style: none;
+/* margin: 0 ; */
+padding: 0 auto;
+gap:6rem;
+}
+.nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.2s;
+    width: max-content;
+}
+
+
+
+
+
+.nav-links li {
+/* YOUR TASK: Add space between menu items */
+gap:1rem; ;
+margin: 0 1rem;
+column-gap: 6rem;
+}
+.sign_up-button {
+    display: none;
+    background-color: black;
+    color: white;
+    
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    width: 200px;
+    padding: 0px 20px;
+}
+@media screen and (min-width: 1268px) {
+    .sign_up-button {
+        display: block;
+    }
+}
+.header
+{
+    background-color:black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cen{
+    width:100% ;
+}
+.logon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1268px) {
+    .logon {
+        /* font-size: 1.5rem;
+        margin-left: 40px; */
+        width: 1900%;
+    }
+    
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        
+<div class="logon">ZERODHA</div>
+<div class="cen">
+<nav class="navbar">
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+</nav>
+<a href="login" class="sign_up-button">
+    Sign Up
+</a>
+    </div>
+    <div class="container">
+      <div class="logo">
+        <img
+          id="k"
+          src="https://kite.zerodha.com/static/images/kite-logo.svg"
+          class="hi"
+          alt="kite"
+        />
+      </div>
+      <div class="heading">Login to Kite</div>
+      <form >
+        <div class="email">
+          <!-- <label for="email">Email</label> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Phone or User ID"
+            required
+          />
+        </div>
+        <div class="password">
+          <!-- <label for="password">Password</label> -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div >
+        <div >
+            <button class="login" type="submit">Login</button>
+        </div>
+        
+        <div class="remember">
+           Forgot user ID or password?
+        </div>
+      </form>
+
+
+    </div>
+  </body>
+</html>
